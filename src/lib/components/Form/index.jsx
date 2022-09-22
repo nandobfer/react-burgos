@@ -2,7 +2,6 @@ import React from "react";
 import { Formik } from 'formik';
 
 export const Form = ({children, initialValues, onSubmit}) => {
-    console.log(children)
     return (
         <Formik
             initialValues={initialValues}

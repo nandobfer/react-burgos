@@ -19,7 +19,7 @@ export const Input = (props) => {
                 ? <MaskedInput 
                     {...field}
                     {...props}
-                    guide={false}
+                    guide={props.guide || false}
                 />
                 : <input 
                     {...field}

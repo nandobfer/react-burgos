@@ -20,12 +20,12 @@ export const Input = (props) => {
                     {...field}
                     {...props}
                     guide={props.guide || false}
-                    ref={props.innerRef}
+                    ref={props.refs}
                 />
                 : <input 
                     {...field}
                     {...props}
-                    ref={props.innerRef}
+                    ref={props.refs}
                 />
             )}
         </Field>

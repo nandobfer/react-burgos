@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik } from 'formik';
 
-export const Form = ({children, initialValues, onSubmit, className, innerRef}) => {
+export const Form = ({children, initialValues, onSubmit, className, refs}) => {
     return (
         <Formik
             initialValues={initialValues}
@@ -20,7 +20,7 @@ export const Form = ({children, initialValues, onSubmit, className, innerRef}) =
                     // handleReset
                 } = props;
                 return (
-                    <form onSubmit={handleSubmit} className={className} ref={innerRef}>
+                    <form onSubmit={handleSubmit} className={className} ref={refs}>
                         {children}
                     </form>
                 )
